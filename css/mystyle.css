@@ -1,0 +1,45 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* my style*/
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  margin: 10px;
+  flex-direction: column;
+}
+
+.container { 
+  border: 2px solid grey;
+  margin-top: 2rem;
+}
+
+input {
+  text-align: center;
+}
+.buttons {
+  flex-direction: row;
+}
+.text{
+  width: 30%;
+}
+
+button {
+  width: 30%;
+  margin-top: 1rem;
+  height: 35px;
+  border-radius: 12px; 
+}
+
+p {
+margin-top: 1rem;
+font-size: 2rem;
+}
